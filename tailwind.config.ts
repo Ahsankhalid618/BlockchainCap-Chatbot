@@ -21,8 +21,12 @@ module.exports = {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)']
       },
+      backgroundImage: {
+        'newbg': "url('.././public/new.png')",
+      },
       colors: {
         border: 'hsl(var(--border))',
+        'dark-blue' : '#041122',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',

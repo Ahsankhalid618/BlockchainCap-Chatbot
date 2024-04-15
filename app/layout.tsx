@@ -1,6 +1,7 @@
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-
+import Image from 'next/image'
+import bg from '.././public/new.png'
 import '@/app/globals.css'
 import { cn } from '@/lib/utils'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
@@ -50,9 +51,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex flex-col flex-1 bg-muted/50">{children}</main>
+          <div className="flex flex-col min-h-screen bg-newbg bg-center bg-cover">
+            {/* <Header /> */}
+            <main className="flex flex-col flex-1 ">{children}</main>
           </div>
           <TailwindIndicator />
         </Providers>
